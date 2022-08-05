@@ -24,21 +24,21 @@ main > span {
 	right: 0;
 	overflow: hidden;
 	height: 50px;
-	animation-name: error;
+	/* animation-name: error;
 	animation-duration: 1s;
-	animation-fill-mode: forwards;
+	animation-fill-mode: forwards; */
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
-@keyframes error {
+/* @keyframes error {
 	from {
 		right: -100%;
 	}
 	to {
 		right: 20px;
 	}
-}
+} */
 main header {
 	height: 50px;
 	padding-left: 20px;
