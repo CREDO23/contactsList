@@ -1,0 +1,105 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Contact-list</title>
+	</head>
+	<body>
+		<main>
+			<span>
+				<img src="./imgs/icon-error.svg" alt="" />
+				The value of this image exeeded the quota ! Please , choose an
+				other
+			</span>
+			<header>
+				<h2>Répertoire des contacts</h2>
+			</header>
+
+			<div>
+				<section class="form">
+					<header>
+						<h3>Formulaire de contact</h3>
+					</header>
+					<form autocomplete="off">
+						<div class="bio">
+							<label for="name">Prénom</label>
+							<input type="text" id="firstName" />
+						</div>
+						<div class="bio">
+							<label for="name">Nom</label>
+							<input type="text" id="lastName" />
+						</div>
+						<div class="bio">
+							<label for="groupe">Groupe</label>
+							<div class="select">
+								<select id="groupe">
+									<option value=""></option>
+									<option value="Zinou Kds">Zinou Kds</option>
+									<option value="Journal El Bilad">
+										Journal El Bilad
+									</option>
+									<option value="	Khadija Benganna">
+										Khadija Benganna
+									</option>
+									<option value="Ahlam Mosteghanemi">
+										Ahlam Mosteghanemi
+									</option>
+									<option value="Daft Punk">Daft Punk</option>
+									<option value="Sais-tu que">Sais-tu que</option>
+								</select>
+							</div>
+						</div>
+						<div class="bio">
+							<label for="bio">Bio</label>
+							<textarea
+								name=""
+								id="bio"
+								cols="30"
+								rows="5"
+							></textarea>
+						</div>
+						<div class="file">
+							<label for="file">Photo de profil</label>
+							<span>
+								<p>Choisir un fichier</p>
+								<input type="file" name="" id="file" />
+							</span>
+							<div>
+								<img
+									id="previewImgUser"
+									height="100px"
+									width="100px"
+									src="./imgs/user-default.jpeg"
+									alt=""
+								/>
+							</div>
+						</div>
+						<footer>
+							<input type="submit" id="creer" value="Créer" />
+							<input
+								type="button"
+								id="reinitialiser"
+								value="Réint."
+							/>
+						</footer>
+					</form>
+				</section>
+				<section class="list">
+					<header>
+						<h3>Liste des contact</h3>
+					</header>
+					<div class="cards"></div>
+				</section>
+			</div>
+		</main>
+		<script type="module" src="./js/index.js"></script>
+	</body>
+</html>
