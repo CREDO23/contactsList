@@ -17,28 +17,29 @@ main {
 		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 main > span {
-	border: solid black 1px;
-	width: 60%;
+	background: rgb(255, 0, 0);
+	text-align: center;
+	
+	color: white;
+	border-radius: 10px;
+	width: 600px;
 	position: absolute;
 	top: 30px;
 	right: 0;
 	overflow: hidden;
-	height: 50px;
-	/* animation-name: error;
+	height: 30px;
+	animation-name: error;
 	animation-duration: 1s;
-	animation-fill-mode: forwards; */
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	animation-fill-mode: forwards;
 }
-/* @keyframes error {
+@keyframes error {
 	from {
 		right: -100%;
 	}
 	to {
 		right: 20px;
 	}
-} */
+}
 main header {
 	height: 50px;
 	padding-left: 20px;
@@ -55,6 +56,7 @@ main > div {
 	display: flex;
 	padding: 10px;
 	justify-content: space-around;
+
 }
 section {
 	border: solid rgba(0, 0, 255, 0.1) 1px;
@@ -222,3 +224,15 @@ footer #reinitialiser:hover {
 	top: 0;
 	font-size: 2rem;
 }
+@media only screen and (max-width: 950px) {
+	main > div {
+		flex-direction: column;
+		align-items: center;
+	}
+	.form {
+		width: 100%;
+	}
+	.list {
+		width: 100%;
+	}
+  }
